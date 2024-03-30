@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mocos - Encode Decode Morse Code</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/fontawesome.js"></script>
+  <script src="./js/tailwindcss.js"></script>
+  <script src="./js/main.js" defer></script>
+</head>
+<body class="
+   bg-black/90
+   flex flex-col
+   p-5 text-md text-slate-200
+  ">
+
+  <span class="text-center text-xl font-mono">
+    Mocos
+  </span>
+  <span class="text-center text-sm 
+    italic text-slate-300 mb-8 pb-5">
+    Encode text to morse code, Decode morse code to text.
+  </span>
+
+  <textarea 
+  id="input-text"
+  class="w-full bg-gray-500/30 rounded-md border-2
+	 border-slate-700 h-[200px]
+	 resize-none p-2 
+	 placeholder:italic text-lg 
+	 mb-3 outline-none focus:border-slate-600
+    "
+  placeholder="Enter text to encode or decode..."
+    ></textarea>
+  <div class="w-full flex space-x-3">
+    <button onclick="encode()" class="bg-orange-500 w-full p-2 rounded-md">Encode</button>
+    <button onclick="decode()" class="bg-green-500 w-full p-2 rounded-md">Decode</button>
+</div>
+
+<div class="bg-gray-500/30 w-full
+  min-h-[100px] h-auto mt-8
+  rounded-md p-2 text-slate-400">
+  <pre id="output">Output:</pre>
+</div>
+
+</body>
+</html>
